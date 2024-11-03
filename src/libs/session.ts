@@ -6,6 +6,6 @@ type MySessionData = {
 };
 
 export const session = nextAppSession<MySessionData>({
-  name: "SID",
-  secret: "",
+  name: "calendix_session",
+  secret: process.env.secret,
 });
