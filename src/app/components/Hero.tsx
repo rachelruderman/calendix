@@ -13,9 +13,15 @@ export default function Hero() {
 
   return (
     <section className="text-center mt-24">
-      <h1 className="text-5xl font-bold mb-6 leading-snug">
+      <h1 className="text-5xl font-bold mb-6 leading-tight">
         Scheduling{" "}
-        <span className="text-blue-600 cool-underline">made simple</span>
+        <span
+          className={`text-blue-600 ${
+            showLine ? "show-underline" : "cool-underline"
+          }`}
+        >
+          made simple
+        </span>
         <br />
         for people like you
       </h1>

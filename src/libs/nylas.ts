@@ -8,6 +8,6 @@ export const nylasConfig = {
 };
 
 export const nylas = new Nylas({
-  apiKey: nylasConfig.apiKey,
+  apiKey: nylasConfig.apiKey!,
   apiUri: nylasConfig.apiUri,
 });
